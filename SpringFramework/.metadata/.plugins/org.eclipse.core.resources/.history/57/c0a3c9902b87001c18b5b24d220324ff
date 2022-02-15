@@ -1,0 +1,5 @@
+package com.springormdemo1entities;
+
+public class StudentDao {
+
+}

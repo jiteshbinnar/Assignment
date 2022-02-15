@@ -1,0 +1,15 @@
+package com.springormdemo1entities;
+
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.springormdemo1dao.Student;
+
+public class StudentDao {
+
+	private HibernateTemplate hibernateTemplate;
+
+	private int insert(Student student) {
+		Integer i = (Integer) this.hibernateTemplate.save(student);
+		return i;
+	}
+}

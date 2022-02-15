@@ -1,0 +1,39 @@
+package com.springcore.standalone;
+
+import java.util.List;
+import java.util.Map;
+
+public class Student {
+
+	private List<String>name;
+    private Map<String, Integer>coursesFees;
+    
+    
+	public Map<String, Integer> getCoursesFees() {
+		return coursesFees;
+	}
+
+	public void setCoursesFees(Map<String, Integer> coursesFees) {
+		this.coursesFees = coursesFees;
+	}
+
+	public List<String> getName() {
+		return name;
+	} 
+
+	public void setName(List<String> name) {
+		this.name = name;
+	}
+
+	public Student() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + "]";
+	}
+
+
+	
+}

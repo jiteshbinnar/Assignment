@@ -1,0 +1,30 @@
+package com.springcore.sterotype;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Component;
+@Component
+public class Employee {
+	private String name;
+	private Map<String,Integer>deptAndSalary;
+	public Employee() {
+		super();
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Map<String, Integer> getDeptAndSalary() {
+		return deptAndSalary;
+	}
+	public void setDeptAndSalary(Map<String, Integer> deptAndSalary) {
+		this.deptAndSalary = deptAndSalary;
+	}
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", deptAndSalary=" + deptAndSalary + "]";
+	}
+
+}

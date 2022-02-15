@@ -1,0 +1,5 @@
+package com.springcore.standalone;
+
+public class Student {
+
+}

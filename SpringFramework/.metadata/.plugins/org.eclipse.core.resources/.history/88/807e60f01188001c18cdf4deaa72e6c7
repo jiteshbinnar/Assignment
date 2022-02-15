@@ -1,0 +1,106 @@
+package com.springormdemo1;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.nio.Buffer;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.springormdemo1dao.Student;
+import com.springormdemo1entities.StudentDao;
+
+/**
+ * 
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main( String[] args )
+    {
+          ApplicationContext context  =new ClassPathXmlApplicationContext("com/springormdemo1/config.xml");
+                   StudentDao studentDao =context.getBean("studentDao",StudentDao.class);
+//                   Student student=new Student();
+//                   student.setStudentId(123);
+//                   student.setStudentName("jitesh Binnar");
+//                   studentDao.insert(student);
+                   
+                  boolean a=true;
+                   
+                   while(a) {
+                	   
+                   
+                   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+                   
+                   
+                   System.out.println("press 1 for add student");
+                   System.out.println("press 2 for display all student");
+                   System.out.println("press 3 for get any one student");
+                   System.out.println("press 4 for delete student");
+                   System.out.println("press 5 for update student");
+                   System.out.println("press 6 for exit");
+                   
+                   try {
+                	   int input=Integer.parseInt(br.readLine());
+                	   
+                	   switch (input) {
+					case 1:
+						System.out.println("enter student Id");
+						int sId=Integer.parseInt(br.readLine());
+						System.out.println("enter student name");
+						String sName=br.readLine();
+						Student s=new Student();
+						s.setStudentId(sId);
+						s.setStudentName(sName);
+						int add=studentDao.insert(s);
+						System.out.println(add+"student added");
+						break;
+	               case 2:
+	            	   
+						List<Student>allStudents=studentDao.getallStudents();
+						for(Student s1:allStudents)
+						{
+							System.out.println("id "+s1.getStudentId());
+							System.out.println("name "+s1.getStudentName());
+						}
+						break;
+	               case 3:
+		               int sId1=Integer.parseInt(br.readLine());
+		              Student s2=studentDao.getSudent(sId1);
+		               System.out.println("id "+s2.getStudentId());
+		               System.out.println("name "+s2.getStudentName());
+		               
+		               
+	                	break;
+	               case 4:
+		                 int sId2= Integer.parseInt(br.readLine());
+		                 studentDao.delete(sId2);;
+		                 System.out.println("student deleted");
+	                	break;
+	               case 5:
+	            	   Student s3=new Student();
+	            	   
+	            	   int sid3=Integer.parseInt(br.readLine());
+	            	   String sName3=br.readLine();
+	                  s3.setStudentId(sid3);
+	                  s3.setStudentName(sName3);
+	                  studentDao.update(s3);
+	                  System.out.println("student updated");
+		                break;
+	               case 6:
+		               a=false;
+	                	break;
+					
+					}
+                	   
+                   }
+                   catch (Exception e) {
+					System.out.println("input is invalid");
+					System.out.println();e.getMessage();
+				}
+                   }
+                   System.out.println("Thank you for using this Application!!!");
+                   
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+    <bean class="com.spring.Book" name="book" init-method="bookCreating" destroy-method="bookDestroy">
+<property name="name" value="wings of fire"/>
+        <property name="price" value="500"/>
+
+    </bean>
+    <bean class="com.spring.Book" name="book1">
+<constructor-arg name="name" value="Mrutunjaya"/>
+<constructor-arg name="price" value="500"/>
+    </bean>
+
+
+<bean class="com.spring.Author" name="author">
+<constructor-arg name="name" value="ramdhari singh"/>
+<constructor-arg name="country" value="India"/>
+    <constructor-arg name="authorId" value="125"/>
+    <constructor-arg name="book" ref="book1"/>
+</bean>
+
+    <bean class="com.spring.Demo" name="demo">
+        <constructor-arg name="a" value="12" type="int"/>
+        <constructor-arg name="b" value="15"/>
+    </bean>
+
+</beans>

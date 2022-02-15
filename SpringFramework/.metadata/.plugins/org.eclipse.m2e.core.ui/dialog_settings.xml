@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\jites\Documents"/>
+			<item value="C:\Users\jites\Desktop\Jitesh\WeeklyTest"/>
+			<item value="C:\Users\jites\Desktop\Jitesh\weekly Test\SpringFramework\springormDemo"/>
+			<item value="C:\Users\jites"/>
+			<item value="C:\Users\jites\Desktop\Jitesh\weekly Test\SpringFramework\springorm"/>
+			<item value="C:\Users\jites\Desktop\Jitesh\weekly Test\SpringFramework\SpringFramework\src"/>
+			<item value="C:\Users\jites\Desktop\Jitesh\weekly Test\SpringFramework\SpringFramework"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.springorms.springorms"/>
+			<item value="com.springormdemo1"/>
+			<item value="com.springormdemo.springormdemo"/>
+			<item value="com.springorm.springorm"/>
+			<item value="com.springorm"/>
+			<item value="com.springcores"/>
+			<item value="com.springcore"/>
+		</list>
+		<list key="groupId">
+			<item value="com.springorms"/>
+			<item value="com.springormdemo1"/>
+			<item value="com.springormdemo"/>
+			<item value="com.springorm"/>
+			<item value="com.springcores"/>
+			<item value="com.springcore"/>
+		</list>
+		<list key="artifactId">
+			<item value="springorms"/>
+			<item value="springormdemo1"/>
+			<item value="springormdemo"/>
+			<item value="springorm"/>
+			<item value="springcores"/>
+			<item value="springcore"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\jites\Downloads"/>
+			<item value="C:\Users\jites\Documents"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,5 @@
+package com.springormdemo1dao;
+
+public class Student {
+
+}
